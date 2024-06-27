@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  spot-api:
+    container_name: spot-api
+    restart: always
+    build: .
+    ports:
+      - '3000:3000'
+    environment:
+      - SPOTIFY_CLIENT_ID=${SPOTIFY_CLIENT_ID}
+      - SPOTIFY_CLIENT_SECRET=${SPOTIFY_CLIENT_SECRET}
+    networks:
+      - maya-net
+  chrome-api:
+    image: mingalevme/screenshoter
+    restart: always
+    container_name: chrome-api
+    ports:
+      - '9800:8080'
+    networks:
+      - maya-net
+
+networks:
+  maya-net:
+     name: maya-net
+     driver: bridge
