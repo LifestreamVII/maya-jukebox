@@ -1,6 +1,8 @@
-﻿# Maya Jukebox
-
-![enter image description here](https://i.imgur.com/lVOiXrE.jpeg)
+<p align="center">
+  <a href="" rel="noopener">
+ <img src="https://i.imgur.com/lVOiXrE.jpeg" width="500px" alt="Project header"></a>
+</p>
+<h1 align="center">Maya Jukebox</h1>
 
 Maya Jukebox est un script Python programmé pour Autodesk Maya (testé sur 2024) qui génère une scène animée à partir du titre d'un album de musique et de son artiste.
 
