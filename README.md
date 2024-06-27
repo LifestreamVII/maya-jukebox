@@ -24,7 +24,7 @@ La commande d'installation est la suivante :
 
     mayapy -m pip install <package>
 
-Les services en back-end peuvent être déployés en local (le script utilisant déjà une version distante et fonctionnelle) en installant les containers Docker.
+Si voulu, les services en back-end peuvent être déployés en local (pas obligatoire car le script utilise déjà une version distante et fonctionnelle) en installant les containers Docker.
 
     docker compose up -d --build
 
